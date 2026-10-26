@@ -67,14 +67,14 @@ function LotsAside({ lots, setLots }: Props) {
           pr={6}
         >
           {lots.map((item, index) => (
-            <Group key={index} gap="xs" align="end">
+            <Group key={index} gap="xs" align="end" wrap="nowrap">
               <ThemeIcon color={theme.colors.cyan[7]}>
                 <Text fw={700} fz={theme.fontSizes.sm}>
                   {index + 1}
                 </Text>
               </ThemeIcon>
 
-              <Text fw={500} flex={1}>
+              <Text fw={500} flex={1} style={{ textOverflow: "ellipsis" }}>
                 {item.name}
               </Text>
 

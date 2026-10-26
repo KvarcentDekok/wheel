@@ -7,6 +7,7 @@ import { Tab } from "../../const/enum";
 import type { Lot, Member } from "../../types/types";
 import LotsAside from "../LotsAside/LotsAside";
 import Members from "../Members/Members";
+import { ASIDE_WIDTH } from "../../const/const";
 
 function Home() {
   const [activeTab, setActiveTab] = useState<Tab>(Tab.Lots);
@@ -18,7 +19,7 @@ function Home() {
       padding="md"
       header={{ height: 60 }}
       navbar={{
-        width: 300,
+        width: ASIDE_WIDTH,
         breakpoint: "sm",
       }}
     >
