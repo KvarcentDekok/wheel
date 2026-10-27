@@ -50,10 +50,10 @@ function Members({ members, setMembers }: Props) {
         bg="var(--mantine-color-body)"
         align="stretch"
         justify="center"
-        gap="xs"
+        gap={0}
       >
         {members.map((item, index) => (
-          <Group key={index} gap="xs" align="end">
+          <Group key={item.id} gap="xs" align="end" py={4}>
             <ThemeIcon color={theme.colors.cyan[7]}>
               <Text fw={700} fz={theme.fontSizes.sm}>
                 {index + 1}
